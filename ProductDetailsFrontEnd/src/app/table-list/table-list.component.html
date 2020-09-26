@@ -1,0 +1,44 @@
+<div class="main-content">
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-md-12">
+              <div class="card">
+                  <div class="card-header card-header-danger">
+                      <h4 class="card-title ">Products Table</h4>
+                      <p class="card-category"> Here is the product details</p>
+                  </div>
+                  <div class="card-body">
+                      <div class="table-responsive">
+                          <table class="table">
+                              <thead class=" text-primary">
+                                  <th>
+                                      Product Name
+                                  </th>
+                                  <th>
+                                      Product Availability
+                                  </th>
+                                  <th>
+                                      Product Category
+                                  </th>
+                              <tbody>
+                                  <tr *ngFor="let product of productData">
+                                      <td>
+                                          {{product.prd_name}}
+                                      </td>
+                                      <td>
+                                          {{product.availibility}}
+                                      </td>
+                                      <td>
+                                            {{product.category_name}}
+                                      </td>
+                                      
+                                  </tr>
+                              </tbody>
+                          </table>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
